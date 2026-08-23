@@ -1,0 +1,148 @@
+/* =========================================
+   响应式适配增强 (Tablet - max-width: 1024px)
+   ========================================= */
+@media (max-width: 1024px) {
+    .sidebar { width: 220px; }
+    .product-grid, .news-grid, .related-grid { grid-template-columns: repeat(2, 1fr); }
+    .product-intro { flex-direction: column; }
+    .goal-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* =========================================
+   响应式适配增强 (Tablet/Mobile - max-width: 992px)
+   ========================================= */
+@media (max-width: 992px) {
+    .intro-layout, .rel-layout { flex-direction: column; }
+    .intro-video, .rel-img { width: 100%; min-height: 300px; }
+    .dark-grid, .testi-grid, .footer-grid { grid-template-columns: repeat(2, 1fr); }
+    .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+    .cta-bar { flex-direction: column; text-align: center; gap: 20px;}
+    
+    .contact-layout { grid-template-columns: 1fr; gap: 40px; padding: 40px 0 80px;}
+    .contact-info-wrap { order: 2; } /* 移动端表单排上方，信息排下方 */
+    .contact-form-card { order: 1; padding: 40px 30px; }
+}
+
+/* =========================================
+   响应式适配增强 (Mobile - max-width: 768px)
+   ========================================= */
+@media (max-width: 768px) {
+    .hero{min-height:40vh}
+    /* 🚨 核心修复：强制隐藏桌面端专属元素，防止挤压 */
+    .top-left { display: none !important; }
+    .nav-links { display: none !important; }
+    .nav-action { display: none !important; }
+
+    /* 顶部黑条排版修复 */
+    .top-bar-inner { justify-content: center; }
+    .top-right { width: 100%; justify-content: space-between; font-size: 12px; }
+
+    /* 强制显示移动端汉堡菜单按钮 */
+    .mobile-menu-btn { display: flex !important; align-items: center; gap: 6px; font-size: 16px; font-weight: 600; cursor: pointer; color: #222;}
+    .nav-wrapper { height: 65px; }
+    .container{padding-right:15px!important;padding-left:15px!important;}
+    /* About Us / 通用页面标题缩放 */
+    .page-header { padding: 40px 0 10px; }
+    .section-title h2 { font-size: 24px; line-height: 1.3;}
+    
+    /* 各种网格布局转为单列 */
+    .gallery-grid { grid-template-columns: 1fr; }
+    .dark-grid, .stats-grid, .testi-grid, .footer-grid { grid-template-columns: 1fr; gap: 30px;}
+    
+    /* 装饰水印缩放 */
+    .bg-text { font-size: 100px; top: 10%; }
+
+    /* 手机端悬浮组件位置和尺寸缩放 */
+    .floating-group { bottom: 20px; right: 20px; }
+    .fab-toggle { width: 55px; height: 55px; }
+    .fab-item, .fab-btt { width: 45px; height: 45px; }
+    .fab-toggle svg { width: 28px; height: 28px; }
+
+    /* 弹窗与表单响应式适配 */
+    .form-group-half { grid-template-columns: 1fr; gap: 20px; }
+    .quote-modal { padding: 30px 20px; width: 100%; height: 100vh; max-height: 100vh; border-radius: 0; transform: translateY(0); }
+    .modal-close { top: 15px; right: 15px; }
+
+    /* 通用左右分栏页面的折叠（侧栏统一放到主内容上方） */
+    .page-layout { flex-direction: column; gap: 20px; margin: 20px auto 40px; }
+    .sidebar { width: 100%; order: -1; margin-top: 20px;}
+    .sidebar-search { margin-bottom: 20px; }
+    .main-content { padding-right: 0; }
+
+    /* 产品网格/详情适配 */
+    .category-intro-block .intro-text {
+        padding: 20px 15px;
+    }
+    .category-intro-block .intro-text p {
+        font-size: 13.5px;
+    }
+    .product-info h1 { font-size: 20px; }
+    .meta-list li { flex-direction: column; gap: 5px; }
+    .meta-list li strong { width: 100%; }
+    .styled-table { font-size: 12px; }
+    .styled-table th, .styled-table td { padding: 8px 5px; }
+
+    /* 品质与制造能力页面 */
+    .page-title { font-size: 26px; }
+    .goal-grid { grid-template-columns: repeat(2, 1fr); }
+    .capability-table > tbody > tr > td { padding: 12px 10px; display: block; width: 100% !important; }
+    .capability-table > tbody > tr > td:first-child { border-bottom: none; padding-bottom: 5px; font-size: 15px;}
+
+    /* 新闻页面 */
+    .news-grid { grid-template-columns: 1fr; }
+    .article-title { font-size: 26px; }
+    .post-nav-text h4 { font-size: 12px; }
+    .post-nav-icon { width: 28px; height: 28px; }
+
+    /* 联系我们页面 */
+    .contact-form-card { padding: 30px 20px; }
+
+    /* 隐私政策页 */
+    .policy-container { padding: 40px 15px 60px; }
+    
+     .case-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .case-item {
+        border-bottom: 1px solid #e0e0e0;
+    }
+    .factory-layout{
+        flex-direction: column;
+    }
+    .grid-4{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .about-layout {
+        flex-direction: column;
+    }
+    .grid-3{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+     .error-title {
+                font-size: 2.2rem;
+            }
+
+            .error-desc {
+                font-size: 1.1rem;
+            }
+
+            .error-buttons {
+                gap: 1rem;
+            }
+
+            .error-btn {
+                padding: 0.9rem 1.8rem;
+                font-size: 1rem;
+            }
+    
+}
+
+/* =========================================
+   响应式适配增强 (Small Mobile - max-width: 480px)
+   ========================================= */
+@media (max-width: 480px) {
+    .goal-grid { grid-template-columns: 1fr; }
+    /* 极小屏幕下，防止邮箱和电话重叠，改为上下居中排列 */
+    .top-right {align-items: center; gap: 8px;}
+}
