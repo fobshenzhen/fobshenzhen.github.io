@@ -5,7 +5,7 @@
 body { color: #333; line-height: 1.6; background-color: #fff; overflow-x: hidden; }
 a { text-decoration: none; color: inherit; }
 ul { list-style: none; }
-img{max-width: 100%; width: 100%; vertical-align: bottom;}
+img{max-width: 100%;  vertical-align: bottom;}
 
 .container { max-width: 1300px; margin: 0 auto; padding: 0 20px; }
 
