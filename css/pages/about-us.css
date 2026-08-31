@@ -191,13 +191,13 @@
 }
 
 .about-page .bg-text {
-  position: absolute;
+  /* position: absolute;
   right: -80px;
   top: -30px;
   font-size: 120px;
   font-weight: 900;
   color: rgba(243,112,33,0.06);
-  pointer-events: none;
+  pointer-events: none; */
 }
 
 .about-page .rel-layout {
