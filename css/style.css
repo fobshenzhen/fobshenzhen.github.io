@@ -730,7 +730,7 @@ align-items: center; justify-content: center; padding: 5px;}
 .about-layout { gap: 40px; }
 .about-img { overflow: hidden; }
 .about-img img { width: 100%; height: auto; display: block; }
-.about-text { flex: 1.2; }
+/* .about-text { flex: 1.2; } */
 .about-text h2 { margin-bottom: 16px; }
 .about-text p { line-height: 1.7; margin-bottom: 16px; }
 .btn-about { display: inline-block; padding: 12px 28px; font-weight: 600; transition: background 0.3s; margin-top: 4px; }
