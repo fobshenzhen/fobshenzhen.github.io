@@ -1,5 +1,5 @@
 # robots.txt
-# 生成时间: 2026-09-01T05:22:16.723Z
+# 生成时间: 2026-09-01T06:47:02.710Z
 
 # 允许所有爬虫
 User-agent: *
@@ -20,7 +20,7 @@ Disallow: /*.json$
 Crawl-delay: 1
 
 # sitemap 位置
-Sitemap: http://kinsaimachining.xg102.yjkj2026.cn/sitemap-index.xml
+Sitemap: https://chinacncservices.com/sitemap-index.xml
 
 # 重要: 搜索引擎抓取规则
 # Google
